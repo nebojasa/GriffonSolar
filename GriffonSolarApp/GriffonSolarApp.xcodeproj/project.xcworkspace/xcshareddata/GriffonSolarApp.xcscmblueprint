@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C2219B5F512A862F30F5F256E718588E2413262A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C2219B5F512A862F30F5F256E718588E2413262A" : 0,
+    "6C4D490E36DE2BC28D3EEF3B9B1D2C119F145ACE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C10B6309-AB95-4B87-8FAE-DBA9D52A5934",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C2219B5F512A862F30F5F256E718588E2413262A" : "GriffonSolarApp\/",
+    "6C4D490E36DE2BC28D3EEF3B9B1D2C119F145ACE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GriffonSolarApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GriffonSolarApp\/GriffonSolarApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nebojasa\/ToDo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C4D490E36DE2BC28D3EEF3B9B1D2C119F145ACE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nebojasa\/GriffonSolar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C2219B5F512A862F30F5F256E718588E2413262A"
+    }
+  ]
+}
