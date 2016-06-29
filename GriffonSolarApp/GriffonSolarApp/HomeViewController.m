@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  GriffonSolarApp
 //
 //  Created by Nebojsa Gujanicic on 16/06/2016.
 //  Copyright © 2016 Nebojsa Gujanicic. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 
-@interface ViewController()
+@interface HomeViewController()
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

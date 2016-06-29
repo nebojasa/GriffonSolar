@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GriffoneiPhone" translatesAutoresizingMaskIntoConstraints="NO" id="W9N-Bu-1RC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="W9N-Bu-1RC" secondAttribute="bottom" id="7e7-MV-E4Q"/>
+                            <constraint firstAttribute="trailing" secondItem="W9N-Bu-1RC" secondAttribute="trailing" id="FQQ-my-0m5"/>
+                            <constraint firstItem="W9N-Bu-1RC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bkL-bQ-o9I"/>
+                            <constraint firstItem="W9N-Bu-1RC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ffI-v3-hac"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GriffoneiPhone" width="750" height="1334"/>
+    </resources>
 </document>

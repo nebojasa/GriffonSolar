@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  GriffonSolarApp
 //
 //  Created by Nebojsa Gujanicic on 16/06/2016.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HomeViewController : UIViewController
 @end
 

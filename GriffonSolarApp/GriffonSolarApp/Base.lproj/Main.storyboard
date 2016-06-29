@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QTl-BQ-bB1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,12 +17,158 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="39C-RD-S8n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-k0-Dbb">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agf-XU-UX4" userLabel="weather">
+                                        <rect key="frame" x="8" y="8" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="fe8-9l-0Ib"/>
+                                            <constraint firstAttribute="height" constant="76" id="oqU-FG-DVR"/>
+                                        </constraints>
+                                        <state key="normal" image="weather"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-wn-bgI" userLabel="web">
+                                        <rect key="frame" x="516" y="8" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="PRW-Sy-X2A"/>
+                                            <constraint firstAttribute="height" constant="76" id="WQH-PX-30H"/>
+                                        </constraints>
+                                        <state key="normal" image="greenweb"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRn-Ft-U3f" userLabel="tool">
+                                        <rect key="frame" x="8" y="102" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="vLx-KI-z5I"/>
+                                            <constraint firstAttribute="width" constant="76" id="wtx-nf-IDg"/>
+                                        </constraints>
+                                        <state key="normal" image="compas"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzR-v2-qhB" userLabel="facebook">
+                                        <rect key="frame" x="262" y="102" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="7P0-W9-tT7"/>
+                                            <constraint firstAttribute="width" constant="76" id="hpr-Mr-rCM"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="git-Qu-JRk" userLabel="costs">
+                                        <rect key="frame" x="516" y="102" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="a8k-NP-0Fc"/>
+                                            <constraint firstAttribute="height" constant="76" id="oc7-O1-Bae"/>
+                                        </constraints>
+                                        <state key="normal" image="revenuecost1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03n-Y0-nbz" userLabel="solararray">
+                                        <rect key="frame" x="8" y="196" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="9m0-Jh-37Y"/>
+                                            <constraint firstAttribute="width" constant="76" id="XWm-to-mzO"/>
+                                        </constraints>
+                                        <state key="normal" image="solararraysize"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80E-Um-Kul" userLabel="about us">
+                                        <rect key="frame" x="262" y="196" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="1dO-Qu-2Sz"/>
+                                            <constraint firstAttribute="width" constant="76" id="wZY-Kg-GnZ"/>
+                                        </constraints>
+                                        <state key="normal" image="aboutGriffon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-xb-Eiq" userLabel="settings">
+                                        <rect key="frame" x="516" y="196" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="1WH-O2-Tqo"/>
+                                            <constraint firstAttribute="width" constant="76" id="cob-bV-K8k"/>
+                                        </constraints>
+                                        <state key="normal" image="settings"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-4X-nio" userLabel="map">
+                                        <rect key="frame" x="262" y="8" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="LuP-9a-IYY"/>
+                                            <constraint firstAttribute="width" constant="76" id="OUI-72-PbU"/>
+                                        </constraints>
+                                        <state key="normal" image="maps"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GzR-v2-qhB" firstAttribute="top" secondItem="UAH-4X-nio" secondAttribute="bottom" constant="18" id="1Mp-Bk-kwz"/>
+                                    <constraint firstItem="03n-Y0-nbz" firstAttribute="bottom" secondItem="ieA-k0-Dbb" secondAttribute="bottomMargin" id="23i-BE-Nm5"/>
+                                    <constraint firstItem="GzR-v2-qhB" firstAttribute="centerX" secondItem="ieA-k0-Dbb" secondAttribute="centerX" id="2Y6-OQ-BHm"/>
+                                    <constraint firstItem="MKr-wn-bgI" firstAttribute="trailing" secondItem="ieA-k0-Dbb" secondAttribute="trailingMargin" id="2z8-9L-sFo"/>
+                                    <constraint firstItem="8l1-xb-Eiq" firstAttribute="top" secondItem="git-Qu-JRk" secondAttribute="bottom" constant="18" id="FM0-9j-nXc"/>
+                                    <constraint firstItem="agf-XU-UX4" firstAttribute="leading" secondItem="ieA-k0-Dbb" secondAttribute="leadingMargin" id="J1W-7P-xbI"/>
+                                    <constraint firstItem="UAH-4X-nio" firstAttribute="top" secondItem="ieA-k0-Dbb" secondAttribute="topMargin" id="Jcj-mW-lFY"/>
+                                    <constraint firstItem="8l1-xb-Eiq" firstAttribute="trailing" secondItem="ieA-k0-Dbb" secondAttribute="trailingMargin" id="OVb-Br-VoQ"/>
+                                    <constraint firstItem="8l1-xb-Eiq" firstAttribute="bottom" secondItem="ieA-k0-Dbb" secondAttribute="bottomMargin" id="R09-qj-Ctw"/>
+                                    <constraint firstItem="UAH-4X-nio" firstAttribute="centerX" secondItem="ieA-k0-Dbb" secondAttribute="centerX" id="XCa-1T-gli"/>
+                                    <constraint firstItem="agf-XU-UX4" firstAttribute="top" secondItem="ieA-k0-Dbb" secondAttribute="topMargin" id="Zqb-sh-xeo"/>
+                                    <constraint firstItem="git-Qu-JRk" firstAttribute="trailing" secondItem="ieA-k0-Dbb" secondAttribute="trailingMargin" id="bfK-LB-hDk"/>
+                                    <constraint firstItem="03n-Y0-nbz" firstAttribute="top" secondItem="RRn-Ft-U3f" secondAttribute="bottom" constant="18" id="cSz-Kk-JiO"/>
+                                    <constraint firstItem="RRn-Ft-U3f" firstAttribute="leading" secondItem="ieA-k0-Dbb" secondAttribute="leading" constant="8" id="ecD-3f-T2n"/>
+                                    <constraint firstAttribute="height" constant="280" id="fGZ-Pv-Ls6"/>
+                                    <constraint firstItem="80E-Um-Kul" firstAttribute="centerX" secondItem="ieA-k0-Dbb" secondAttribute="centerX" id="jEB-Il-KSD"/>
+                                    <constraint firstItem="MKr-wn-bgI" firstAttribute="top" secondItem="ieA-k0-Dbb" secondAttribute="topMargin" id="kG6-E6-dXF"/>
+                                    <constraint firstItem="03n-Y0-nbz" firstAttribute="leading" secondItem="ieA-k0-Dbb" secondAttribute="leadingMargin" id="oms-tE-wHM"/>
+                                    <constraint firstItem="80E-Um-Kul" firstAttribute="top" secondItem="GzR-v2-qhB" secondAttribute="bottom" constant="18" id="um1-8e-wtu"/>
+                                    <constraint firstAttribute="bottom" secondItem="80E-Um-Kul" secondAttribute="bottom" constant="8" id="z0z-Pa-gGa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ieA-k0-Dbb" secondAttribute="bottom" id="GbE-hv-5QL"/>
+                            <constraint firstAttribute="trailing" secondItem="ieA-k0-Dbb" secondAttribute="trailing" id="Juo-1V-4Tg"/>
+                            <constraint firstItem="39C-RD-S8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ej6-Ii-GN0"/>
+                            <constraint firstItem="ieA-k0-Dbb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kTY-zm-Lak"/>
+                            <constraint firstAttribute="trailing" secondItem="39C-RD-S8n" secondAttribute="trailing" id="lcS-dx-Al7"/>
+                            <constraint firstItem="39C-RD-S8n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mcA-9k-OZ2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="39C-RD-S8n" secondAttribute="bottom" id="uiQ-WK-EJx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8MC-AC-qqC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="403"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="djU-d0-ocL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="QTl-BQ-bB1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mlY-fe-d7m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z8d-FW-WeO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="600-vC-bhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="301" y="403"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutGriffon" width="120" height="120"/>
+        <image name="background2" width="1242" height="2209"/>
+        <image name="compas" width="120" height="120"/>
+        <image name="facebook" width="120" height="120"/>
+        <image name="greenweb" width="120" height="120"/>
+        <image name="maps" width="120" height="120"/>
+        <image name="revenuecost1" width="120" height="120"/>
+        <image name="settings" width="120" height="120"/>
+        <image name="solararraysize" width="120" height="120"/>
+        <image name="weather" width="120" height="120"/>
+    </resources>
 </document>

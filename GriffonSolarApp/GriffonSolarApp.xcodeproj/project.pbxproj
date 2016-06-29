@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		52A2AC571D1301B5004B9B2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2AC561D1301B5004B9B2F /* main.m */; };
 		52A2AC5A1D1301B5004B9B2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2AC591D1301B5004B9B2F /* AppDelegate.m */; };
-		52A2AC5D1D1301B5004B9B2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2AC5C1D1301B5004B9B2F /* ViewController.m */; };
+		52A2AC5D1D1301B5004B9B2F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A2AC5C1D1301B5004B9B2F /* HomeViewController.m */; };
 		52A2AC601D1301B5004B9B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2AC5E1D1301B5004B9B2F /* Main.storyboard */; };
 		52A2AC621D1301B5004B9B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A2AC611D1301B5004B9B2F /* Assets.xcassets */; };
 		52A2AC651D1301B5004B9B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2AC631D1301B5004B9B2F /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 		52A2AC561D1301B5004B9B2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52A2AC581D1301B5004B9B2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52A2AC591D1301B5004B9B2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52A2AC5B1D1301B5004B9B2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		52A2AC5C1D1301B5004B9B2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52A2AC5B1D1301B5004B9B2F /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		52A2AC5C1D1301B5004B9B2F /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		52A2AC5F1D1301B5004B9B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52A2AC611D1301B5004B9B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A2AC641D1301B5004B9B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				52A2AC581D1301B5004B9B2F /* AppDelegate.h */,
 				52A2AC591D1301B5004B9B2F /* AppDelegate.m */,
-				52A2AC5B1D1301B5004B9B2F /* ViewController.h */,
-				52A2AC5C1D1301B5004B9B2F /* ViewController.m */,
+				52A2AC5B1D1301B5004B9B2F /* HomeViewController.h */,
+				52A2AC5C1D1301B5004B9B2F /* HomeViewController.m */,
 				52A2AC5E1D1301B5004B9B2F /* Main.storyboard */,
 				52A2AC611D1301B5004B9B2F /* Assets.xcassets */,
 				52A2AC631D1301B5004B9B2F /* LaunchScreen.storyboard */,
@@ -110,7 +110,6 @@
 				TargetAttributes = {
 					52A2AC511D1301B5004B9B2F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UE3WRJMD6V;
 					};
 				};
 			};
@@ -150,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A2AC5D1D1301B5004B9B2F /* ViewController.m in Sources */,
+				52A2AC5D1D1301B5004B9B2F /* HomeViewController.m in Sources */,
 				52A2AC5A1D1301B5004B9B2F /* AppDelegate.m in Sources */,
 				52A2AC571D1301B5004B9B2F /* main.m in Sources */,
 			);
@@ -264,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GriffonSolarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.GriffonSolarApp;
@@ -275,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GriffonSolarApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rs.cubes.GriffonSolarApp;
@@ -301,6 +302,7 @@
 				52A2AC6B1D1301B5004B9B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
